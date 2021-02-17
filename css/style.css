@@ -1,0 +1,167 @@
+:root{
+  /*  Colors */
+  
+/* ### Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan-whyUs: hsl(179, 58%, 55%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+/* ### Neutral */
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 18%, 59%);
+}
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  color: #e6eff6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid hsl(204, 43%, 93%);
+  border-radius: 10px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+  overflow: hidden;
+}
+
+.card__header{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.header__title{
+  color: var(--Cyan);
+}
+
+.header__subtitle{
+  color: var(--Bright-Yellow);
+}
+
+.header__parrafo{
+  color: var(--Grayish-Blue);
+  line-height: 25px;
+}
+
+.card__subcription{
+  background-color: var(--Cyan);
+  color:var(--Light-Gray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.subcription__price{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subcription__month{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
+
+.subcription__button{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.button__style{
+  width: 100%;
+  padding: 15px 0;
+  color: inherit;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.card__whyUs{
+  background-color: var(--Cyan-whyUs);
+  color: var(--Light-Gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+@media screen and (min-width:768px){
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:768px){
+  .card__body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:768px){
+  .card__subcription{
+    width: 50%;
+    padding: 30px;
+  }
+}
+@media screen and (min-width:768px){
+  .card__whyUs{
+    width: 50%;
+    padding: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Cyan-whyUs);
+}
